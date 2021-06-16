@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="us.opencart.abstracta.runners.CompraRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="DESKTOP-JILHI5A" time="0.0">
+  <properties/>
+  <system-out><![CDATA[14:49:36.283 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM C:\Users\Asus\ProyectoFinalScreenplay\serenity.properties 
+14:49:36.429 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM C:\Users\Asus\ProyectoFinalScreenplay\serenity.properties 
+14:49:36.433 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM C:\Users\Asus\ProyectoFinalScreenplay\serenity.properties 
+14:49:36.460 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.driver=chrome
+14:49:36.461 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.chrome.driver=chromedriver.exe
+14:49:36.461 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - chrome.switches=--start-maximized --disable-popup-blocking
+14:49:36.461 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.take.screenshots=FOR_EACH_ACTION
+14:49:36.461 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.timeouts.implicitlywait=10000
+14:49:37.057 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/Asus/ProyectoFinalScreenplay/src/test/resources/features/compra.feature
+14:49:37.402 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM C:\Users\Asus\ProyectoFinalScreenplay\serenity.properties 
+14:49:37.487 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM C:\Users\Asus\ProyectoFinalScreenplay\serenity.properties 
+14:49:37.488 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM C:\Users\Asus\ProyectoFinalScreenplay\serenity.properties 
+14:49:37.490 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.driver=chrome
+14:49:37.491 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.chrome.driver=chromedriver.exe
+14:49:37.491 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - chrome.switches=--start-maximized --disable-popup-blocking
+14:49:37.492 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.take.screenshots=FOR_EACH_ACTION
+14:49:37.492 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.timeouts.implicitlywait=10000
+14:49:37.520 [Test worker] INFO  - 
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at http://www.serenity-bdd.info                                  
+ Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
+ Join the Serenity Community on Gitter: https://gitter.im/serenity-bdd/serenity-core 
+ Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
+-------------------------------------------------------------------------------------
+
+14:49:37.537 [Test worker] DEBUG net.thucydides.core.steps.StepEventBus - Test suite started for story net.thucydides.core.model.Story@5f5e2db5
+14:49:37.542 [Test worker] INFO  - Test Suite Started: compra de computador
+
+1 Scenarios (?[32m1 passed?[0m)
+6 Steps (?[32m6 passed?[0m)
+1m8,800s
+
+
+14:50:45.857 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
+14:50:46.093 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
+14:50:46.141 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.json.JSONTestOutcomeReporter@7e333d3a
+14:50:46.170 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome compra de computador:compra de computadora en pagina web
+14:50:46.170 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@7e333d3a: Generating report for test outcome: compra de computador:compra de computadora en pagina web
+14:50:46.185 [pool-1-thread-1] DEBUG net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for compra de computadora en pagina web to file C:\Users\Asus\ProyectoFinalScreenplay\target\site\serenity\6526fd7727d43ef27962337c1f48bf8344d2947b634fc04be9b71fbe650ee087.json (using temp file C:\Users\Asus\ProyectoFinalScreenplay\target\site\serenity\6526fd7727d43ef27962337c1f48bf8344d2947b634fc04be9b71fbe650ee087.jsond07f57f2-ad48-4d13-8890-996fe7920491)
+14:50:46.327 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome compra de computador:compra de computadora en pagina web done
+14:50:46.329 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
+14:50:46.330 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 169 ms
+14:50:46.330 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@1880995
+14:50:46.354 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome compra de computador:compra de computadora en pagina web
+14:50:46.355 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@1880995: Generating report for test outcome: compra de computador:compra de computadora en pagina web
+14:50:46.355 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATE TEST OUTCOME REPORT FOR compra de computadora en pagina web in 6526fd7727d43ef27962337c1f48bf8344d2947b634fc04be9b71fbe650ee087
+14:50:46.406 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Added feature compra de computador
+14:50:46.409 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.RequirementsTagProvider -  found:[Requirement{name='compra de computador', type='feature' parent = 'null', cardNumber='null'}]
+14:50:46.419 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.BaseRequirementsService - Requirement found for test outcome compra de computadora en pagina web-[]: Optional[Requirement{name='compra de computador', type='feature' parent = 'null', cardNumber='null'}]
+14:50:46.421 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.BaseRequirementsService - Requirement found for test outcome compra de computadora en pagina web-[]: Optional[Requirement{name='compra de computador', type='feature' parent = 'null', cardNumber='null'}]
+14:50:46.542 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.BaseRequirementsService - Requirement found for test outcome compra de computadora en pagina web-[]: Optional[Requirement{name='compra de computador', type='feature' parent = 'null', cardNumber='null'}]
+14:50:46.544 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.BaseRequirementsService - Requirement found for test outcome compra de computadora en pagina web-[]: Optional[Requirement{name='compra de computador', type='feature' parent = 'null', cardNumber='null'}]
+14:50:46.555 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - Generating report in 6526fd7727d43ef27962337c1f48bf8344d2947b634fc04be9b71fbe650ee087_screenshots.html
+14:50:47.929 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - Generated report 6526fd7727d43ef27962337c1f48bf8344d2947b634fc04be9b71fbe650ee087_screenshots.html in 1374 ms
+14:50:47.935 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR compra de computador:compra de computadora en pagina web in 6526fd7727d43ef27962337c1f48bf8344d2947b634fc04be9b71fbe650ee087.html in directory C:\Users\Asus\ProyectoFinalScreenplay\target\site\serenity  
+14:50:47.942 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - Generating report in 6526fd7727d43ef27962337c1f48bf8344d2947b634fc04be9b71fbe650ee087.html
+14:50:53.263 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - Generated report 6526fd7727d43ef27962337c1f48bf8344d2947b634fc04be9b71fbe650ee087.html in 5321 ms
+14:50:53.263 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome compra de computador:compra de computadora en pagina web done
+14:50:53.263 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
+14:50:53.263 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 6933 ms
+14:50:53.652 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Cleanup test resources for URI file:///C:/Users/Asus/ProyectoFinalScreenplay/src/test/resources/features/compra.feature
+14:50:53.654 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Closing darkroom
+14:50:53.655 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Darkroom processing line shutting down
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

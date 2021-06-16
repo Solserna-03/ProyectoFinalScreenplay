@@ -1,0 +1,324 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="23032b97a48b5594926acfceb4342372b993c00bb4cb90db8015ac5c6b433366.html">Compra De Computador</a></span>
+                > <span class="truncate-60"><a
+                    href="6526fd7727d43ef27962337c1f48bf8344d2947b634fc04be9b71fbe650ee087.html">compra de computadora en pagina web </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 16-06-2021 14:49</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Compra De Computador </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">compra de computadora en pagina web
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="9ea4881d483ee3f19ad854437253197b26281b7ed915f82fcb2398484c531b9e.png" title=" carla opens the Home page" width="1366"/>
+                <img src="4370f2886b25bd9fe1f18f5eee15552f6131ffeff5968c1eff93ed29e8c000c5.png" title=" Dado que Juan busque una computadora &quot;imac&quot; en la pagina web" width="1366"/>
+                <img src="2ccc4e99796e033291bef2bb8de6f3295a02d1dbe9a7db2dd62911aeed6ac560.png" title=" Carla buscar computadora" width="1366"/>
+                <img src="2ccc4e99796e033291bef2bb8de6f3295a02d1dbe9a7db2dd62911aeed6ac560.png" title=" carla enters 'imac' into buscar computadora" width="1366"/>
+                <img src="6e4e839b44c408df11b46a9272e3c7594c7ca93edfc0158d76981827a92b7c16.png" title=" carla enters 'imac' into buscar computadora" width="1366"/>
+                <img src="981ec6138267e7529fc68ac0093c2fc290115575791d010c908a0f593c615509.png" title=" carla enters 'imac' into buscar computadora (completed)" width="1366"/>
+                <img src="7f731b2bcd3b07f66ac5a96f9850847c8a156e7ceeabf12c1feb60b07019f2d9.png" title=" carla types 'ENTER' in buscar computadora" width="1366"/>
+                <img src="8102d93a97cab71980aa0b354849d8edd9d965e42e2bbc7c06174f969c6a1b0a.png" title=" carla types 'ENTER' in buscar computadora (completed)" width="1366"/>
+                <img src="8102d93a97cab71980aa0b354849d8edd9d965e42e2bbc7c06174f969c6a1b0a.png" title=" Carla buscar computadora (completed)" width="1366"/>
+                <img src="8102d93a97cab71980aa0b354849d8edd9d965e42e2bbc7c06174f969c6a1b0a.png" title=" Dado que Juan busque una computadora &quot;imac&quot; en la pagina web (completed)" width="1366"/>
+                <img src="d9ad859ad5e87c9db481fb4d506d27dc4d14438ccc180578708cfddc96fdcfe9.png" title=" Y la ingrese al carro de compras" width="1366"/>
+                <img src="d9ad859ad5e87c9db481fb4d506d27dc4d14438ccc180578708cfddc96fdcfe9.png" title=" Carla seleccionar computadora" width="1366"/>
+                <img src="d9ad859ad5e87c9db481fb4d506d27dc4d14438ccc180578708cfddc96fdcfe9.png" title=" carla clicks on seleccionar computadora" width="1366"/>
+                <img src="ececb58ec217a7945280b1bbe3c57a9ca6ecc524c5d721a27e1ae0a9410d2479.png" title=" carla clicks on seleccionar computadora (completed)" width="1366"/>
+                <img src="ececb58ec217a7945280b1bbe3c57a9ca6ecc524c5d721a27e1ae0a9410d2479.png" title=" carla clicks on ingresar al carrito de compras" width="1366"/>
+                <img src="d1d230413912167907ef54c35742515da8ed05289b82741e103b35a83879e120.png" title=" carla clicks on ingresar al carrito de compras" width="1366"/>
+                <img src="d1d230413912167907ef54c35742515da8ed05289b82741e103b35a83879e120.png" title=" carla clicks on ingresar al carrito de compras (completed)" width="1366"/>
+                <img src="d1d230413912167907ef54c35742515da8ed05289b82741e103b35a83879e120.png" title=" Carla seleccionar computadora (completed)" width="1366"/>
+                <img src="d1d230413912167907ef54c35742515da8ed05289b82741e103b35a83879e120.png" title=" Y la ingrese al carro de compras (completed)" width="1366"/>
+                <img src="0fdcc9fd38f3cfeda6690ee3e11721d01e4ff0c6351f54726bf146c58e8a64ba.png" title=" Cuando verifique que es la computadora que quiere prodece a realizar el pago" width="1366"/>
+                <img src="0fdcc9fd38f3cfeda6690ee3e11721d01e4ff0c6351f54726bf146c58e8a64ba.png" title=" Carla confirmar producto" width="1366"/>
+                <img src="0fdcc9fd38f3cfeda6690ee3e11721d01e4ff0c6351f54726bf146c58e8a64ba.png" title=" carla clicks on comprar" width="1366"/>
+                <img src="0fdcc9fd38f3cfeda6690ee3e11721d01e4ff0c6351f54726bf146c58e8a64ba.png" title=" carla clicks on comprar (completed)" width="1366"/>
+                <img src="0fdcc9fd38f3cfeda6690ee3e11721d01e4ff0c6351f54726bf146c58e8a64ba.png" title=" carla clicks on opciones avanzadas" width="1366"/>
+                <img src="e57b29c8aa9bf665bc50c32321cb0b67b38c3d51890ae82a34e1ca7fcae351de.png" title=" carla clicks on opciones avanzadas" width="1366"/>
+                <img src="e57b29c8aa9bf665bc50c32321cb0b67b38c3d51890ae82a34e1ca7fcae351de.png" title=" carla clicks on opciones avanzadas (completed)" width="1366"/>
+                <img src="e57b29c8aa9bf665bc50c32321cb0b67b38c3d51890ae82a34e1ca7fcae351de.png" title=" carla clicks on ir a sitio no seguro" width="1366"/>
+                <img src="61b92e0691079e162a58fa80e2d02610a25f9804e6d15737ebdac30afdb4a627.png" title=" carla clicks on ir a sitio no seguro" width="1366"/>
+                <img src="61b92e0691079e162a58fa80e2d02610a25f9804e6d15737ebdac30afdb4a627.png" title=" carla clicks on ir a sitio no seguro (completed)" width="1366"/>
+                <img src="61b92e0691079e162a58fa80e2d02610a25f9804e6d15737ebdac30afdb4a627.png" title=" Carla confirmar producto (completed)" width="1366"/>
+                <img src="61b92e0691079e162a58fa80e2d02610a25f9804e6d15737ebdac30afdb4a627.png" title=" Cuando verifique que es la computadora que quiere prodece a realizar el pago (completed)" width="1366"/>
+                <img src="673823c93bf7c86f049ad70ac11427865fe13d8a4f3a532b93af2a0b141010ed.png" title=" Y Juan ingrese usuario &quot;carla.est36@gmail.com&quot; y clave &quot;Estrada.36+&quot;" width="1366"/>
+                <img src="673823c93bf7c86f049ad70ac11427865fe13d8a4f3a532b93af2a0b141010ed.png" title=" Carla login usuario" width="1366"/>
+                <img src="673823c93bf7c86f049ad70ac11427865fe13d8a4f3a532b93af2a0b141010ed.png" title=" carla enters 'carla.est36@gmail.com' into ingresar usuario" width="1366"/>
+                <img src="673823c93bf7c86f049ad70ac11427865fe13d8a4f3a532b93af2a0b141010ed.png" title=" carla enters 'carla.est36@gmail.com' into ingresar usuario (completed)" width="1366"/>
+                <img src="673823c93bf7c86f049ad70ac11427865fe13d8a4f3a532b93af2a0b141010ed.png" title=" carla enters 'Estrada.36+' into ingresar clave" width="1366"/>
+                <img src="a4b6ed838ca28f50922408687b3202b8d6a7feedae4162885f39249ceadb6508.png" title=" carla enters 'Estrada.36+' into ingresar clave" width="1366"/>
+                <img src="a4b6ed838ca28f50922408687b3202b8d6a7feedae4162885f39249ceadb6508.png" title=" carla enters 'Estrada.36+' into ingresar clave (completed)" width="1366"/>
+                <img src="a4b6ed838ca28f50922408687b3202b8d6a7feedae4162885f39249ceadb6508.png" title=" carla clicks on login" width="1366"/>
+                <img src="74e1deb968492df27f08a3cba0dcc9fbb66b81449ff3a1735dffd50b501f028a.png" title=" carla clicks on login" width="1366"/>
+                <img src="74e1deb968492df27f08a3cba0dcc9fbb66b81449ff3a1735dffd50b501f028a.png" title=" carla clicks on login (completed)" width="1366"/>
+                <img src="74e1deb968492df27f08a3cba0dcc9fbb66b81449ff3a1735dffd50b501f028a.png" title=" Carla login usuario (completed)" width="1366"/>
+                <img src="74e1deb968492df27f08a3cba0dcc9fbb66b81449ff3a1735dffd50b501f028a.png" title=" Y Juan ingrese usuario &quot;carla.est36@gmail.com&quot; y clave &quot;Estrada.36+&quot; (completed)" width="1366"/>
+                <img src="a2e3697ecd3ca2adf79a6ffc17458d56ef8f2ce0437cc83c612d7ff90371dc6e.png" title=" Y ingresa datos solictados" width="1366"/>
+                <img src="a2e3697ecd3ca2adf79a6ffc17458d56ef8f2ce0437cc83c612d7ff90371dc6e.png" title=" Carla ingresar datos" width="1366"/>
+                <img src="a2e3697ecd3ca2adf79a6ffc17458d56ef8f2ce0437cc83c612d7ff90371dc6e.png" title=" carla enters 'Karla' into Ingresar nombres" width="1366"/>
+                <img src="2d2225f74a251dba71bec2511edc3e2e5ae3aa919788dd93b07f1ccbb923f2f8.png" title=" carla enters 'Karla' into Ingresar nombres" width="1366"/>
+                <img src="2d2225f74a251dba71bec2511edc3e2e5ae3aa919788dd93b07f1ccbb923f2f8.png" title=" carla enters 'Karla' into Ingresar nombres (completed)" width="1366"/>
+                <img src="2d2225f74a251dba71bec2511edc3e2e5ae3aa919788dd93b07f1ccbb923f2f8.png" title=" carla enters 'Lopez' into Ingresar apellidos" width="1366"/>
+                <img src="ce47ec8df00c4ec93bc861602307933c1fc05bead101425eba5a786c25441b09.png" title=" carla enters 'Lopez' into Ingresar apellidos" width="1366"/>
+                <img src="ce47ec8df00c4ec93bc861602307933c1fc05bead101425eba5a786c25441b09.png" title=" carla enters 'Lopez' into Ingresar apellidos (completed)" width="1366"/>
+                <img src="ce47ec8df00c4ec93bc861602307933c1fc05bead101425eba5a786c25441b09.png" title=" carla enters 'cll 67b' into Ingresar direccion" width="1366"/>
+                <img src="eb98ed8085ed6260f44f097032eeaaf810d47f48a196b49bb0497ac843863ea3.png" title=" carla enters 'cll 67b' into Ingresar direccion" width="1366"/>
+                <img src="eb98ed8085ed6260f44f097032eeaaf810d47f48a196b49bb0497ac843863ea3.png" title=" carla enters 'cll 67b' into Ingresar direccion (completed)" width="1366"/>
+                <img src="eb98ed8085ed6260f44f097032eeaaf810d47f48a196b49bb0497ac843863ea3.png" title=" carla enters 'Florida' into Ingresar ciudad" width="1366"/>
+                <img src="db4372fb52448477cd552abbac74da616012f9f36e9e89eb0809fae5a32e1a90.png" title=" carla enters 'Florida' into Ingresar ciudad" width="1366"/>
+                <img src="db4372fb52448477cd552abbac74da616012f9f36e9e89eb0809fae5a32e1a90.png" title=" carla enters 'Florida' into Ingresar ciudad (completed)" width="1366"/>
+                <img src="db4372fb52448477cd552abbac74da616012f9f36e9e89eb0809fae5a32e1a90.png" title=" carla clicks on Ingresar pais" width="1366"/>
+                <img src="d643f063337d3ae11ab087819b69a63657fb3054f7ed0c325486ecac2baf4834.png" title=" carla clicks on Ingresar pais" width="1366"/>
+                <img src="d643f063337d3ae11ab087819b69a63657fb3054f7ed0c325486ecac2baf4834.png" title=" carla clicks on Ingresar pais (completed)" width="1366"/>
+                <img src="d643f063337d3ae11ab087819b69a63657fb3054f7ed0c325486ecac2baf4834.png" title=" carla clicks on Ingresar pais" width="1366"/>
+                <img src="12aa02d12a7ec4b42f5d9651f579db5a3560b51d01b17be29e0131ee773ee1ca.png" title=" carla clicks on Ingresar pais" width="1366"/>
+                <img src="12aa02d12a7ec4b42f5d9651f579db5a3560b51d01b17be29e0131ee773ee1ca.png" title=" carla clicks on Ingresar pais (completed)" width="1366"/>
+                <img src="12aa02d12a7ec4b42f5d9651f579db5a3560b51d01b17be29e0131ee773ee1ca.png" title=" carla clicks on Ingresar estado" width="1366"/>
+                <img src="e792b05c7ee267820089cf0e67df7178424245906b04d38cfe19b188e16b05a8.png" title=" carla clicks on Ingresar estado" width="1366"/>
+                <img src="e792b05c7ee267820089cf0e67df7178424245906b04d38cfe19b188e16b05a8.png" title=" carla clicks on Ingresar estado (completed)" width="1366"/>
+                <img src="e792b05c7ee267820089cf0e67df7178424245906b04d38cfe19b188e16b05a8.png" title=" carla select Florida on Ingresar estado" width="1366"/>
+                <img src="e792b05c7ee267820089cf0e67df7178424245906b04d38cfe19b188e16b05a8.png" title=" carla select Florida on Ingresar estado (completed)" width="1366"/>
+                <img src="e792b05c7ee267820089cf0e67df7178424245906b04d38cfe19b188e16b05a8.png" title=" carla clicks on Clic en boton Continue" width="1366"/>
+                <img src="a9b0357cf5e8b6296263ce222c0f3c97699963f61a19f0b66761b233623e0639.png" title=" carla clicks on Clic en boton Continue" width="1366"/>
+                <img src="1988e8758571a234edbd9faf37c045424ddb6c041910a120312acb5f81a2cc11.png" title=" carla clicks on Clic en boton Continue (completed)" width="1366"/>
+                <img src="1988e8758571a234edbd9faf37c045424ddb6c041910a120312acb5f81a2cc11.png" title=" Carla ingresar datos (completed)" width="1366"/>
+                <img src="1988e8758571a234edbd9faf37c045424ddb6c041910a120312acb5f81a2cc11.png" title=" Y ingresa datos solictados (completed)" width="1366"/>
+                <img src="6b153ec81ded8ad116363ee3c209c1bc630304906e8512417719cce3bea7e500.png" title=" Entonces confirma la orden de compra con el siguiente mensaje &quot;Your order has been placed!&quot;" width="1366"/>
+                <img src="6b153ec81ded8ad116363ee3c209c1bc630304906e8512417719cce3bea7e500.png" title=" Carla confirmar producto final" width="1366"/>
+                <img src="6b153ec81ded8ad116363ee3c209c1bc630304906e8512417719cce3bea7e500.png" title=" carla clicks on confirmar direccion" width="1366"/>
+                <img src="6b153ec81ded8ad116363ee3c209c1bc630304906e8512417719cce3bea7e500.png" title=" carla clicks on confirmar direccion (completed)" width="1366"/>
+                <img src="6b153ec81ded8ad116363ee3c209c1bc630304906e8512417719cce3bea7e500.png" title=" carla clicks on confirmar metodo" width="1366"/>
+                <img src="1478fa342c8253e99d66ccd4c057b01ae9a1140875119307c05b9d9e38868939.png" title=" carla clicks on confirmar metodo" width="1366"/>
+                <img src="1478fa342c8253e99d66ccd4c057b01ae9a1140875119307c05b9d9e38868939.png" title=" carla clicks on confirmar metodo (completed)" width="1366"/>
+                <img src="1478fa342c8253e99d66ccd4c057b01ae9a1140875119307c05b9d9e38868939.png" title=" carla clicks on confirmar terminos" width="1366"/>
+                <img src="9224385f16d93851c048c8258779daa81f881c4060b84b9d059791668c91dcaf.png" title=" carla clicks on confirmar terminos" width="1366"/>
+                <img src="9224385f16d93851c048c8258779daa81f881c4060b84b9d059791668c91dcaf.png" title=" carla clicks on confirmar terminos (completed)" width="1366"/>
+                <img src="9224385f16d93851c048c8258779daa81f881c4060b84b9d059791668c91dcaf.png" title=" carla clicks on confirmar terminos y condiciones" width="1366"/>
+                <img src="22f21ef0e9e6021125dfd21025cab3c86ee5193264a892ca0dd262c52fcf4247.png" title=" carla clicks on confirmar terminos y condiciones" width="1366"/>
+                <img src="22f21ef0e9e6021125dfd21025cab3c86ee5193264a892ca0dd262c52fcf4247.png" title=" carla clicks on confirmar terminos y condiciones (completed)" width="1366"/>
+                <img src="93a0c4c6c20433fdf81be30ada0a194b9078ca8d440e920409763ab7d2bd576b.png" title=" carla clicks on confirmacion final" width="1366"/>
+                <img src="2799569aa33395cb4a6b53fe8c50daf5d8bfcc6b02f6818fff1180d95640b5d8.png" title=" carla clicks on confirmacion final" width="1366"/>
+                <img src="2799569aa33395cb4a6b53fe8c50daf5d8bfcc6b02f6818fff1180d95640b5d8.png" title=" carla clicks on confirmacion final (completed)" width="1366"/>
+                <img src="2799569aa33395cb4a6b53fe8c50daf5d8bfcc6b02f6818fff1180d95640b5d8.png" title=" Carla confirmar producto final (completed)" width="1366"/>
+                <img src="61ab91f982a0ab4e7f3b50329319ce1203b808893d4b4d5759fe30786a616285.png" title=" Then El actor debe ver should be 'Your order has been placed!'" width="1366"/>
+                <img src="61ab91f982a0ab4e7f3b50329319ce1203b808893d4b4d5759fe30786a616285.png" title=" Then El actor debe ver should be 'Your order has been placed!' (completed)" width="1366"/>
+                <img src="61ab91f982a0ab4e7f3b50329319ce1203b808893d4b4d5759fe30786a616285.png" title=" Entonces confirma la orden de compra con el siguiente mensaje &quot;Your order has been placed!&quot; (completed)" width="1366"/>
+                <img src="41761d9b8de8ac0669dc0d8bb777952486fa420821b36c9c979d6f0cd0a20600.png" title=" Carla cerrar sesion" width="1366"/>
+                <img src="41761d9b8de8ac0669dc0d8bb777952486fa420821b36c9c979d6f0cd0a20600.png" title=" carla clicks on Link de My Account" width="1366"/>
+                <img src="41761d9b8de8ac0669dc0d8bb777952486fa420821b36c9c979d6f0cd0a20600.png" title=" carla clicks on Link de My Account (completed)" width="1366"/>
+                <img src="41761d9b8de8ac0669dc0d8bb777952486fa420821b36c9c979d6f0cd0a20600.png" title=" carla clicks on Link de Logout" width="1366"/>
+                <img src="de0446bfaca78038ea65f242926de6b3f818522ef912961416b092e249304ee9.png" title=" carla clicks on Link de Logout" width="1366"/>
+                <img src="de0446bfaca78038ea65f242926de6b3f818522ef912961416b092e249304ee9.png" title=" carla clicks on Link de Logout (completed)" width="1366"/>
+                <img src="de0446bfaca78038ea65f242926de6b3f818522ef912961416b092e249304ee9.png" title=" Carla cerrar sesion (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.3.31</span>
+</div>
+</body>
+</html>
